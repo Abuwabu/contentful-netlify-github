@@ -21,9 +21,10 @@
 // THE REQUIREMENTS
 const fs = require('fs');
 const pug = require('pug');
+const dotenv = require('dotenv').config();
 
 
-
+// INDEX PAGE
 const index = pug.compileFile('templates/index.pug');
 const post = {
   title: 'Contentful — Github — Netlify',

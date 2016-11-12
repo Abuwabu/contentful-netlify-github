@@ -1,0 +1,20 @@
+{
+  "name": "travis-contentful-github",
+  "version": "1.0.0",
+  "description": "Getting continous deployment working with Contentful and GitHub Pages, using Travis-CI",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "prebuild": "npm run clean -s",
+    "build": "node scripts/index.js",
+    "deploy": "scripts/deploy-ghpages.sh",
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "pug": "^2.0.0-beta6",
+    "slm": "^0.5.1"
+  }
+}

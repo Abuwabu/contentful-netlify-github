@@ -56,5 +56,5 @@ const post = {
 getSpace(url).then((items) => {
   post.list = [];
   items.forEach(i => post.list.push(i.fields.title));
-  fs.writeFileSync('.build/index.html', index(post));
+  fs.writeFileSync('build/index.html', index(post));
 });

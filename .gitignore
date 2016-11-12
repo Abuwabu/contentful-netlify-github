@@ -4,5 +4,6 @@
 /bower_components/
 /node_modules/
 /.build/*
+.brackets.json
 .ruby-version
 .env

@@ -1,13 +1,12 @@
 {
-  "name": "travis-contentful-github",
+  "name": "contentful-netlify-github",
   "version": "1.0.0",
-  "description": "Getting continous deployment working with Contentful and GitHub Pages, using Travis-CI",
+  "description": "Getting continous deployment working with Netlifym Contentful and GitHub",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf .build && mkdir .build",
+    "clean": "rm -rf build && mkdir build",
     "prebuild": "npm run clean -s",
     "build": "node scripts/index.js",
-    "deploy": "scripts/deploy-ghpages.sh",
     "test": ""
   },
   "author": "",
